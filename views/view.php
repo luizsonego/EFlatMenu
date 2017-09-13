@@ -22,9 +22,9 @@
 
                     echo CHtml::tag('li');
                     if (isset($sub_item['icon-class']) && $sub_item['icon-class'])
-                        echo CHtml::link(CHtml::tag('i', array('class' => 'fa ' . $sub_item['icon-class'])) . CHtml::closeTag('i') . $sub_item['label'], $sub_item['url']);
+                        echo CHtml::link(CHtml::tag('i', array('class' => 'fa ' . $sub_item['icon-class'])) . CHtml::closeTag('i') . $sub_item['label'], $sub_item['url'], array('target'=>$sub_item['target']));
                     else
-                        echo CHtml::link($sub_item['label'], $sub_item['url']);
+                        echo CHtml::link($sub_item['label'], $sub_item['url'], array('target'=>$sub_item['target']));
 
                     // third level
                     if (isset($sub_item['items']) && is_array($sub_item['items'])) {
