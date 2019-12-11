@@ -26,7 +26,7 @@ $this->widget('application.extensions.eflatmenu.EFlatMenu', array(
             array('label' => 'Sub-Menu 1', 'url' => '#', 'icon-class'=>'fa-home'),
             array('label' => 'Level 3 Menu', 'url' => '#', 'items' => array(
                 array('label' => 'Sub-Menu 1', 'url' => '#', 'icon-class'=>'fa-home'),
-                 array('label' => 'Sub-Menu 2', 'url' => '#'),
+                 array('label' => 'Sub-Menu 2', 'url' => '#', 'target'=>'_blank'),
             )),
         )),
         array('label' => 'Login', 'url' => array('site/login'), 'visible' => Yii::app()->user->isGuest),
